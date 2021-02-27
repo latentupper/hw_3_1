@@ -15,13 +15,13 @@ Triangle::Triangle(double a, double b, double c) : a(a), b(b), c(c) {
 
 Triangle::Triangle(double a) : a(a), b(a), c(a) { }
 
-double Triangle::P() {
+double Triangle::P() const {
     if(!NotExists()) {
         return a+b+c;
     } else return -1; //типа ошибка, несуществующи треугольник
 }
 
-double Triangle::S() {
+double Triangle::S() const {
     double p = (a+b+c)/2;
     if(!NotExists()) {
         if(IsDegenerated()) {
@@ -30,7 +30,7 @@ double Triangle::S() {
     } else return -1;
 }
 
-int Triangle::angles() {
+int Triangle::angles() const {
     if(!NotExists()) {
         if(IsDegenerated()) {
             return 0;

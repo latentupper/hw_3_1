@@ -4,9 +4,9 @@
 
 class Figure {
 public:
-    virtual double P() = 0;
-    virtual double S() = 0;
-    virtual int angles() = 0;
+    virtual double P() const = 0;
+    virtual double S() const = 0;
+    virtual int angles() const = 0;
 };
 
 #endif //MAIN_TASK_FIGURE_H

@@ -6,15 +6,15 @@
 
 Ellipse::Ellipse(double a, double b) : a(a), b(b) {}
 
-double Ellipse::P() {
+double Ellipse::P() const {
     return 4 * (pi()*a*b + (a-b)*(a-b)) / (a+b); //приближенная формула
 }
 
-double Ellipse::S() {
+double Ellipse::S() const {
     return pi()*a*b;
 }
 
-int Ellipse::angles() {
+int Ellipse::angles() const {
     return 0;
 }
 

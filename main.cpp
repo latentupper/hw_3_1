@@ -6,17 +6,17 @@
 #include "Round.h"
 #include "Ellipse.h"
 
-int angles_amount(Figure& a)
+int angles_amount(const Figure& a)
 {
     return a.angles();
 }
 
-double perimeter(Figure& a)
+double perimeter(const Figure& a)
 {
     return a.P();
 }
 
-double square(Figure& a)
+double square(const Figure& a)
 {
     return a.S();
 }

@@ -6,15 +6,15 @@
 
 Rectangle::Rectangle(double a, double b) : a(a), b(b) {}
 
-double Rectangle::P() {
+double Rectangle::P() const {
     return 2*(a+b);
 }
 
-double Rectangle::S() {
+double Rectangle::S() const {
     return a*b;
 }
 
-int Rectangle::angles() {
+int Rectangle::angles() const {
     if(a*b == 0) {
         return 0;
     } else return 4;

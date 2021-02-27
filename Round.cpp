@@ -6,15 +6,15 @@
 
 Round::Round(double r) : r(r) {}
 
-double Round::P() {
+double Round::P() const {
     return 2*pi()*r;
 }
 
-double Round::S() {
+double Round::S() const {
     return pi()*r*r;
 }
 
-int Round::angles() {
+int Round::angles() const {
     return 0;
 }
 

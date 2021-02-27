@@ -13,9 +13,9 @@ class Triangle: public Figure {
 public:
     explicit Triangle(double a, double b, double c);
     explicit Triangle(double a);
-    double P() override;
-    double S() override;
-    int angles() override;
+    double P() const override;
+    double S() const override;
+    int angles() const override;
 private:
     double a;
     double b;

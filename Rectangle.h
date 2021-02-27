@@ -11,9 +11,9 @@
 class Rectangle: public Figure {
 public:
     explicit Rectangle(double a, double b);
-    double P() override;
-    double S() override;
-    int angles() override;
+    double P() const override;
+    double S() const override;
+    int angles() const override;
 private:
     double a;
     double b;

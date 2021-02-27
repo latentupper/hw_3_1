@@ -11,9 +11,9 @@
 class Square: public Figure {
 public:
     explicit Square(double a);
-    double P() override;
-    double S() override;
-    int angles() override;
+    double P() const override;
+    double S() const override;
+    int angles() const override;
 private:
     double a;
 };
